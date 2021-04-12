@@ -1,0 +1,8 @@
+<h1>Withdraw Money</h1>
+<p>Account Number: {{account.accountNumber}}</p>
+<form method="POST" action="/withdraw">
+<input type="text", name="withdrawlAmount" placeholder="Withdraw Amount"/>
+<input type="hidden" name="accountNumber" value={{account.accountNumber}}>
+<button>Submit</button>
+</form>
+<a href="/dashboard">Cancel</a>

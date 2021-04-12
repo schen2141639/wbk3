@@ -1,0 +1,18 @@
+ <h1>Open New Account</h1>
+ <form method="POST" action="/openAccount">
+ <input type="radio" id="chequing" name="typeOfAccount" value="chequing" onclick="allowSubmit()">
+  <label for="chequing">Chequing</label>
+  <input type="radio" id="savings" name="typeOfAccount" value="savings" onclick="allowSubmit()">
+  <label for="savings">savings</label>
+  <button id="submit" disabled>Submit</button>
+  </form>
+  {{#if message}}
+  <p>{{message}}</p>
+  {{/if}}
+  <a href="/dashboard">Cancel</a>
+  <script>
+      function allowSubmit() {
+        document.getElementById("submit").disabled = false;
+      }
+      
+  </script>

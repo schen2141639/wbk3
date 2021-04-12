@@ -1,0 +1,8 @@
+<h1>Deposit Money</h1>
+<p>Account Number: {{account.accountNumber}}</p>
+<form method="POST" action="/deposit">
+<input type="text", name="depositAmount" placeholder="deposit Amount"/>
+<input type="hidden" name="accountNumber" value={{account.accountNumber}}>
+<button>Submit</button>
+</form>
+<a href="/dashboard">Cancel</a>
